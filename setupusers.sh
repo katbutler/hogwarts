@@ -21,7 +21,7 @@ do
     continue
   fi
   set -e
-  useradd -d "/home/$name" -s /bin/bash -R "/home/$name" -U -m --skel /home/hpotter "$name"  
+  useradd -d "/home/$name" -s /bin/bash -U -m --skel /home/hpotter "$name"  
   echo "added $name"
 done
 
