@@ -17,3 +17,5 @@ do
   echo $name
   useradd -d "/home/$name" -s /bin/bash -R "/home/$name" -U -m --skel /home/hpotter "$name"  
 done
+
+echo "Done creating all users"
