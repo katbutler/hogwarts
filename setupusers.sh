@@ -1,12 +1,12 @@
 #!/bin/bash
-# Usage: sudo usersetup.sh <names.txt>
+# Usage: sudo setupusers.sh <names.txt>
 
 set -xe
 
 F=$1
 
 if [ -z "$F" ]; then
-  echo "Usage: sudo usersetup.sh <names.txt>"
+  echo "Usage: sudo setupusers.sh <names.txt>"
   exit 1
 fi
 
