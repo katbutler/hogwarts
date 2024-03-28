@@ -12,7 +12,7 @@ fi
 
 NAMES=$(cat $F)
 
-for name in "${NAMES[@]}"
+for name in "${NAMES}"
 do
   echo $name
   useradd -d "/home/$name" -s /bin/bash -r "/home/$name" -U -m --skel /home/hpotter "$name"  
